@@ -1,8 +1,8 @@
-from ftplib import FTP 
-
+from ftplib import FTP
+import os
 ftp = FTP()
 ftp.connect('127.0.0.1')
-ftp.login(user='',passwd='')
+ftp.login(user='', passwd='')
 # print(ftp.getwelcome())
 # ftp.dir()
 date = '20150629'
@@ -12,4 +12,5 @@ file_handle = open(filename, "wb").write
 bufsize = 1024
 ftp.cwd(date+'/'+tel_num)
 # ftp.dir()
-ftp.retrbinary("RETR "+filename, file_handle, bufsize)
+ftp.retrbinary("RETR "+ filename, file_handle, bufsize)
+ftp.pwd()
