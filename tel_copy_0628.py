@@ -7,7 +7,7 @@ ftp.login(user='', passwd='')
 # ftp.dir()
 date = '20150629'
 # tel_num = '8663187' #电话号
-filename = '151449-O-0006-8663184-S.wav' #文件名
+# filename = '151449-O-0006-8663184-S.wav' #文件名
 
 bufsize = 1024
 # ftp.cwd(date+'/'+tel_num)  #切换目录
