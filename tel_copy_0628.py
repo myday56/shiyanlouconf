@@ -6,14 +6,17 @@ ftp.login(user='', passwd='')
 # print(ftp.getwelcome())
 # ftp.dir()
 date = '20150629'
-# tel_num = '8663187' #电话号
-# filename = '151449-O-0006-8663184-S.wav' #文件名
+tel_num = '8663187' #电话号
+filename = '151449-O-0006-8663184-S.wav' #文件名
 
 bufsize = 1024
 # ftp.cwd(date+'/'+tel_num)  #切换目录
-# ftp.dir()
 a = []
-a.append(ftp.retrlines('nlst'))
+a = ftp.retrlines('list')
+# print(a.split())
+for i in a[1:3]:
+    print(i)
+# a.append(ftp.retrlines('nlst'))
 
 # print(ftp.pwd())
 
