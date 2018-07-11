@@ -4,9 +4,7 @@ import os
 # print(ftp.getwelcome())
 # ftp.dir()
 url = '192.168.96.55'
-date = '20150629'
-tel_num = '8663187'
-# filename = '151449-O-0006-8663184-S.wav'
+
 lujing = 'C:\\Users\\kfb\\Desktop\\py\\code\\tel'
 
 
