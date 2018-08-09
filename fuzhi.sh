@@ -1,2 +1,2 @@
 #!/bin/sh
-cp ~/shiyanlouconf/.vimrc ~/
+cp -R ~/shiyanloutest/config/. ~/.config
